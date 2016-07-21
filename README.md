@@ -22,6 +22,8 @@
 * The trade recording is focused on concurrency and speed; a separate DWH service has been implemented in order
 to perform the calculations, and data is provided asynchronously in order to complete the trading operations as
 quick as possible
+* For the market index, the price of a stock is the average of all trades; if there have been no trades, that
+stock will not be used to calculate the index
 * `double` should have enough precision to handle this system requirements; if additional precision was needed,
 we would need to use `BigDecimal` or similar
 * The unit test coverage is limited to the requirements; a real implementation would aim 100% coverage
