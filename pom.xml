@@ -11,6 +11,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <exec.mainClass>com.joseprio.stocktest.Console</exec.mainClass>
+    <maven.version>2.3.2</maven.version>
   </properties>
 
   <dependencies>
@@ -27,6 +28,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven.version}</version>
         <configuration>
           <source>8</source>
           <target>8</target>
@@ -35,6 +37,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
+        <version>${maven.version}</version>
         <configuration>
           <archive>
             <manifest>
